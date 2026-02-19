@@ -8,7 +8,7 @@ description: >
   the user says "digest", "tech news", "trend report", "what's happening in [tech topic]",
   or "catch me up on [tech area]". Trigger even for casual phrases like "any interesting
   tech news?" or "what did I miss in frontend this week?".
-version: 0.1.0
+version: 0.2.0
 ---
 
 # Tech Trend Digest
@@ -26,22 +26,34 @@ asking anything.
 
 **Preferences file location:** `memory/tech-trend-digest-preferences.md`
 
-**If the file exists:** Read it and use the saved language and topics. Do NOT re-ask. Confirm
-briefly what's being used:
-> "Using your saved preferences: **Both (EN+JP)**, topics: Frontend, AI/ML, Mobile Dev.
+**If the file exists:** Read it and use the saved digest language, chat language, and topics.
+Do NOT re-ask. Confirm briefly what's being used (in the user's chat language):
+> "Using your saved preferences: digest language **Both (EN+JP)**, chat language **Japanese**,
+> topics: Frontend, AI/ML, Mobile Dev.
 > (Say "change preferences" anytime to update these.)"
+
+**Backward compatibility:** If the preferences file exists but has no "Chat Language" section
+(created before this feature was added), default chat language to English and continue without
+re-asking. The user can update it later via "change preferences".
 
 Then proceed directly to Step 2.
 
-**If the file does NOT exist (first run):** Ask the user using AskUserQuestion with two
+**If the file does NOT exist (first run):** Ask the user using AskUserQuestion with three
 questions at once:
 
-**Question 1 — Language preference:**
+**Question 1 — Digest language preference:**
 - English
 - Japanese (日本語)
 - Both (English + Japanese)
 
-**Question 2 — Topics of interest (multi-select):**
+**Question 2 — Chat language preference:**
+This controls the language Claude uses when talking to the user — confirmations, status
+updates, questions, explanations, and all conversational output outside the digest content
+itself.
+- English
+- Japanese (日本語)
+
+**Question 3 — Topics of interest (multi-select):**
 - Frontend (React, Vue, Svelte, CSS, browser APIs)
 - Backend (Node.js, Go, Rust, Python, databases, APIs)
 - Mobile Dev (React Native, Flutter, Swift, Kotlin)
@@ -57,8 +69,11 @@ Custom topics from free-text input are valid too.
 ```markdown
 # Tech Trend Digest Preferences
 
-## Language
+## Digest Language
 [English | Japanese | Both]
+
+## Chat Language
+[English | Japanese]
 
 ## Topics
 - [topic 1]
@@ -69,9 +84,17 @@ Custom topics from free-text input are valid too.
 [YYYY-MM-DD]
 ```
 
+**Chat language behavior:** Once loaded, use the chat language preference for ALL conversational
+output throughout the entire workflow — confirmations, progress updates, status messages,
+questions, error messages, and the final summary when presenting the digest to the user. The
+digest report content itself follows the **digest language** preference. For example, if chat
+language is Japanese and digest language is English, Claude speaks to the user in Japanese but
+the saved digest markdown file is written in English.
+
 **Preference updates:** If the user says "change preferences", "update topics", "switch
-language", or similar — re-ask only the relevant question(s), then overwrite the file. For
-incremental changes like "add Security to my topics", just append without re-asking everything.
+language", "change chat language", or similar — re-ask only the relevant question(s), then
+overwrite the file. For incremental changes like "add Security to my topics" or "chat in
+Japanese", just apply directly without re-asking everything.
 
 ### Step 2: Check History
 

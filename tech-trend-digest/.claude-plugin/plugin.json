@@ -1,7 +1,7 @@
 {
   "name": "tech-trend-digest",
-  "version": "0.1.0",
-  "description": "Curates personalized tech news digests from authoritative sources, with language preference (EN/JP/Both), topic filtering, freshness validation, and deduplication across runs.",
+  "version": "0.2.0",
+  "description": "Curates personalized tech news digests from authoritative sources, with digest language (EN/JP/Both), chat language preference, topic filtering, freshness validation, and deduplication across runs.",
   "author": {
     "name": "Yuta"
   },
