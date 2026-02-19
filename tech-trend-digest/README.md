@@ -1,39 +1,55 @@
 # Tech Trend Digest
 
-A plugin that curates personalized tech news digests from authoritative sources. Stay current with software development without doomscrolling.
-
-## What it does
-
-- Searches the web for recent, high-quality tech articles, blog posts, and news
-- Filters for authoritative sources and validates freshness (no stale content)
-- Produces a structured markdown digest with summaries and source links
-- Remembers your preferences (language + topics) so you only set them once
-- Tracks what's been reported to avoid duplicates across runs
+A plugin that curates personalized tech news digests from authoritative sources.
 
 ## Commands
 
 | Command | Description |
 |---------|-------------|
 | `/digest` | Generate a new tech trend digest |
-| `/digest-preferences` | View or update your language and topic preferences |
+| `/digest-preferences` | Update your language, chat language, and topic preferences |
+
+## Setup
+
+On first run, you'll pick:
+
+- **Digest language** — English, Japanese, or Both
+- **Chat language** — the language used for conversational responses
+- **Topics** — Frontend, Backend, Mobile, AI/ML, DevOps, PM/Culture, Security, or custom
+
+Preferences are saved to `memory/tech-trend-digest-preferences.md` and reused automatically.
 
 ## How it works
 
-**First run:** You'll be asked to pick a language (English, Japanese, or Both) and select topics (Frontend, Backend, Mobile, AI/ML, DevOps, PM/Culture, Security, or custom). These are saved and reused automatically.
+Each run searches multiple sources, validates freshness (publication date required, within 30 days), deduplicates against past digests, and outputs a markdown report with freshness badges (🟢 ≤14d, 🟡 15-30d, 🟠 30d+).
 
-**Every run:** The skill searches multiple sources, validates article freshness (must have a verifiable publication date within 30 days), cross-references against past digests to avoid repeats, and delivers a markdown report with freshness indicators.
+Past digest URLs are tracked in `memory/tech-trend-digest-history.md`.
 
-## Data files
+---
 
-The plugin stores two files in your `memory/` directory:
+# Tech Trend Digest (日本語)
 
-- `memory/tech-trend-digest-preferences.md` — Your language and topic settings
-- `memory/tech-trend-digest-history.md` — URLs from past digests (for deduplication)
+技術ニュースを厳選してダイジェストにまとめるプラグインです。
 
-## Freshness indicators
+## コマンド
 
-Each article in the digest shows a freshness badge:
+| コマンド | 説明 |
+|---------|------|
+| `/digest` | 新しいテックダイジェストを生成 |
+| `/digest-preferences` | 言語・チャット言語・トピックの設定を変更 |
 
-- 🟢 Published within 14 days
-- 🟡 Published 15-30 days ago (significant items only)
-- 🟠 Over 30 days old (rare, only for landmark announcements)
+## 初回セットアップ
+
+初回実行時に以下を選択します：
+
+- **ダイジェスト言語** — English / Japanese / Both
+- **チャット言語** — 会話応答に使用される言語
+- **トピック** — Frontend、Backend、Mobile、AI/ML、DevOps、PM/Culture、Security、またはカスタム
+
+設定は `memory/tech-trend-digest-preferences.md` に保存され、次回以降は自動で使用されます。
+
+## 仕組み
+
+実行のたびに複数のソースを検索し、鮮度を検証（公開日必須・30日以内）、過去のダイジェストと重複排除を行い、鮮度バッジ付き（🟢 ≤14日、🟡 15-30日、🟠 30日超）のMarkdownレポートを出力します。
+
+過去のURL履歴は `memory/tech-trend-digest-history.md` に記録されます。
