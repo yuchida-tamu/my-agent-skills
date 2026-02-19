@@ -9,6 +9,23 @@ A plugin that curates personalized tech news digests from authoritative sources.
 | `/digest` | Generate a new tech trend digest |
 | `/digest-preferences` | Update your language, chat language, and topic preferences |
 
+## Screenshots
+
+### Running the `/digest` command
+![digest command](docs/onboarding-command.png)
+
+### First-run setup (1/3): Choose digest language
+![Choose digest language](docs/onboarding-1.png)
+
+### First-run setup (2/3): Choose chat language
+![Choose chat language](docs/onboarding-2.png)
+
+### First-run setup (3/3): Select topics
+![Select topics](docs/onboarding-3.png)
+
+### Output: Generated digest file
+![Output artifact](docs/output-artifact.png)
+
 ## Setup
 
 On first run, you'll pick:
@@ -37,6 +54,23 @@ Past digest URLs are tracked in `memory/tech-trend-digest-history.md`.
 |---------|------|
 | `/digest` | 新しいテックダイジェストを生成 |
 | `/digest-preferences` | 言語・チャット言語・トピックの設定を変更 |
+
+## スクリーンショット
+
+### `/digest` コマンドの実行
+![digestコマンド](docs/onboarding-command.png)
+
+### 初回セットアップ (1/3): ダイジェスト言語の選択
+![ダイジェスト言語の選択](docs/onboarding-1.png)
+
+### 初回セットアップ (2/3): チャット言語の選択
+![チャット言語の選択](docs/onboarding-2.png)
+
+### 初回セットアップ (3/3): トピックの選択
+![トピックの選択](docs/onboarding-3.png)
+
+### 出力: 生成されたダイジェストファイル
+![出力アーティファクト](docs/output-artifact.png)
 
 ## 初回セットアップ
 
