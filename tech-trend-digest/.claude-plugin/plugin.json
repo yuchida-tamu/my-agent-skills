@@ -1,0 +1,9 @@
+{
+  "name": "tech-trend-digest",
+  "version": "0.1.0",
+  "description": "Curates personalized tech news digests from authoritative sources, with language preference (EN/JP/Both), topic filtering, freshness validation, and deduplication across runs.",
+  "author": {
+    "name": "Yuta"
+  },
+  "keywords": ["tech", "news", "digest", "trends", "software-development"]
+}
