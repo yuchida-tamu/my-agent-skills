@@ -19,10 +19,32 @@ Then install any plugin:
 
 ## Plugins
 
-| Plugin | Source | Description |
-|--------|--------|-------------|
-| [tech-trend-digest](./tech-trend-digest/) | local | Personalized tech news digests with bilingual support (EN/JP) |
-| [claude-office-visualizer](https://github.com/yuchida-tamu/claude-office-visualizer) | npm | Real-time 3D visualization of Claude Code agent orchestration |
+### [tech-trend-digest](./tech-trend-digest/)
+
+Curates personalized tech news digests from authoritative sources with bilingual support (EN/JP). Topic filtering, freshness validation, and deduplication across runs.
+
+```
+/plugin install tech-trend-digest@yuchida-agent-skills
+```
+
+### [claude-office-visualizer](https://github.com/yuchida-tamu/claude-office-visualizer)
+
+Real-time 3D visualization of Claude Code agent orchestration. Watch your AI agents work in an interactive office scene powered by Three.js.
+
+This plugin requires the server to be installed separately via npm:
+
+```bash
+# 1. Install the server + CLI
+npm install -g claude-office-visualizer
+
+# 2. Install the plugin hooks
+/plugin install claude-office-visualizer@yuchida-agent-skills
+
+# 3. Start the visualizer and use Claude Code
+claude-visualizer start
+```
+
+See the [claude-office-visualizer repo](https://github.com/yuchida-tamu/claude-office-visualizer) for full documentation.
 
 ---
 
@@ -47,7 +69,29 @@ Claude Codeにマーケットプレイスを追加：
 
 ## プラグイン
 
-| プラグイン | ソース | 説明 |
-|-----------|--------|------|
-| [tech-trend-digest](./tech-trend-digest/) | local | バイリンガル対応（EN/JP）のテックニュースダイジェスト |
-| [claude-office-visualizer](https://github.com/yuchida-tamu/claude-office-visualizer) | npm | Claude Codeエージェントオーケストレーションのリアルタイム3D可視化 |
+### [tech-trend-digest](./tech-trend-digest/)
+
+信頼性の高いソースからパーソナライズされたテックニュースダイジェストを作成。バイリンガル対応（EN/JP）、トピックフィルタリング、鮮度検証、重複排除機能付き。
+
+```
+/plugin install tech-trend-digest@yuchida-agent-skills
+```
+
+### [claude-office-visualizer](https://github.com/yuchida-tamu/claude-office-visualizer)
+
+Claude Codeエージェントオーケストレーションのリアルタイム3D可視化。Three.jsを使ったインタラクティブなオフィスシーンでAIエージェントの動作を観察できます。
+
+このプラグインはnpmでサーバーを別途インストールする必要があります：
+
+```bash
+# 1. サーバー + CLIをインストール
+npm install -g claude-office-visualizer
+
+# 2. プラグインフックをインストール
+/plugin install claude-office-visualizer@yuchida-agent-skills
+
+# 3. ビジュアライザーを起動してClaude Codeを使用
+claude-visualizer start
+```
+
+詳細は[claude-office-visualizerリポジトリ](https://github.com/yuchida-tamu/claude-office-visualizer)を参照してください。
