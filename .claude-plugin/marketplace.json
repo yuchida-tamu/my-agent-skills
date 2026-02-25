@@ -1,0 +1,41 @@
+{
+  "name": "yuchida-agent-skills",
+  "owner": {
+    "name": "Yuta Uchida"
+  },
+  "metadata": {
+    "description": "A collection of plugins and skills for AI-powered automation"
+  },
+  "plugins": [
+    {
+      "name": "tech-trend-digest",
+      "source": "./tech-trend-digest",
+      "description": "Curates personalized tech news digests from authoritative sources with bilingual support (EN/JP)",
+      "version": "0.2.0",
+      "author": {
+        "name": "Yuta Uchida"
+      },
+      "repository": "https://github.com/yuchida-tamu/my-agent-skills",
+      "license": "MIT",
+      "keywords": ["tech", "news", "digest", "trends", "software-development"],
+      "strict": true
+    },
+    {
+      "name": "claude-office-visualizer",
+      "source": {
+        "source": "npm",
+        "package": "claude-office-visualizer",
+        "version": "^0.1.1"
+      },
+      "description": "Real-time 3D visualization of Claude Code agent orchestration",
+      "author": {
+        "name": "Yuta Uchida"
+      },
+      "repository": "https://github.com/yuchida-tamu/claude-office-visualizer",
+      "homepage": "https://www.npmjs.com/package/claude-office-visualizer",
+      "license": "MIT",
+      "keywords": ["visualization", "3d", "agents", "three-js", "real-time"],
+      "strict": true
+    }
+  ]
+}
