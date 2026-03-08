@@ -36,6 +36,19 @@
       "license": "MIT",
       "keywords": ["visualization", "3d", "agents", "three-js", "real-time"],
       "strict": true
+    },
+     {
+      "name": "english-coach",
+      "source": "./english-coach",
+      "version": "0.1.0",
+      "description": "Corrects grammar, suggests natural phrasing, expands vocabulary, and improves business English in every response.",
+      "author": {
+        "name": "Yuta Uchida"
+      },
+      "repository": "https://github.com/yuchida-tamu/my-agent-skills",
+      "license": "MIT",
+      "keywords": ["english", "coaching"],
+      "strict": true
     }
   ]
 }
