@@ -1,0 +1,8 @@
+{
+  "name": "english-coach",
+  "version": "0.1.0",
+  "description": "Corrects grammar, suggests natural phrasing, expands vocabulary, and improves business English in every response.",
+  "author": {
+    "name": "Yuta Uchida"
+  }
+}

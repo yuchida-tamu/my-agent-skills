@@ -14,6 +14,7 @@ Then install any plugin:
 
 ```
 /plugin install tech-trend-digest@yuchida-agent-skills
+/plugin install english-coach@yuchida-agent-skills
 /plugin install claude-office-visualizer@yuchida-agent-skills
 ```
 
@@ -25,6 +26,14 @@ Curates personalized tech news digests from authoritative sources with bilingual
 
 ```
 /plugin install tech-trend-digest@yuchida-agent-skills
+```
+
+### [english-coach](./english-coach/)
+
+Passive English language coaching that runs in every conversation. Corrects grammar, suggests natural phrasing, expands vocabulary, and improves business English — all appended at the end of each response.
+
+```
+/plugin install english-coach@yuchida-agent-skills
 ```
 
 ### [claude-office-visualizer](https://github.com/yuchida-tamu/claude-office-visualizer)
@@ -64,6 +73,7 @@ Claude Codeにマーケットプレイスを追加：
 
 ```
 /plugin install tech-trend-digest@yuchida-agent-skills
+/plugin install english-coach@yuchida-agent-skills
 /plugin install claude-office-visualizer@yuchida-agent-skills
 ```
 
@@ -75,6 +85,14 @@ Claude Codeにマーケットプレイスを追加：
 
 ```
 /plugin install tech-trend-digest@yuchida-agent-skills
+```
+
+### [english-coach](./english-coach/)
+
+会話ごとにパッシブに動作する英語コーチング。文法修正、自然な言い回しの提案、語彙拡張、ビジネス英語の改善をレスポンスの末尾に追加します。
+
+```
+/plugin install english-coach@yuchida-agent-skills
 ```
 
 ### [claude-office-visualizer](https://github.com/yuchida-tamu/claude-office-visualizer)
