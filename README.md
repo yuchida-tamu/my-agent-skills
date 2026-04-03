@@ -18,6 +18,12 @@ Then install any plugin:
 /plugin install claude-office-visualizer@yuchida-agent-skills
 ```
 
+If a newly added plugin isn't found, update the marketplace cache first:
+
+```
+/plugin marketplace update yuchida-agent-skills
+```
+
 ## Plugins
 
 ### [tech-trend-digest](./tech-trend-digest/)
@@ -75,6 +81,12 @@ Claude Codeにマーケットプレイスを追加：
 /plugin install tech-trend-digest@yuchida-agent-skills
 /plugin install english-coach@yuchida-agent-skills
 /plugin install claude-office-visualizer@yuchida-agent-skills
+```
+
+新しく追加されたプラグインが見つからない場合、マーケットプレイスのキャッシュを更新してください：
+
+```
+/plugin marketplace update yuchida-agent-skills
 ```
 
 ## プラグイン
