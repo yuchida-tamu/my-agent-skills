@@ -49,6 +49,19 @@
       "license": "MIT",
       "keywords": ["english", "coaching"],
       "strict": true
+    },
+    {
+      "name": "cross-repo",
+      "source": "./cross-repo",
+      "version": "0.1.0",
+      "description": "Work on sibling repos while compounding context from your home repo.",
+      "author": {
+        "name": "Yuta Uchida"
+      },
+      "repository": "https://github.com/yuchida-tamu/my-agent-skills",
+      "license": "MIT",
+      "keywords": ["cross-repo", "sibling", "context", "agent", "multi-repo"],
+      "strict": true
     }
   ]
 }
