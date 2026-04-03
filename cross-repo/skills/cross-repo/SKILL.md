@@ -6,7 +6,6 @@ description: >
   repositories. Use this skill when the user invokes /cross-repo with a target repo path
   and a task description. The skill parses the user's natural language input, gathers
   home repo context, and spawns an agent to execute the task on the sibling repo.
-version: 0.1.0
 ---
 
 # Cross-Repo Skill

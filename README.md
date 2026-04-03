@@ -15,6 +15,7 @@ Then install any plugin:
 ```
 /plugin install tech-trend-digest@yuchida-agent-skills
 /plugin install english-coach@yuchida-agent-skills
+/plugin install cross-repo@yuchida-agent-skills
 /plugin install claude-office-visualizer@yuchida-agent-skills
 ```
 
@@ -40,6 +41,14 @@ Passive English language coaching that runs in every conversation. Corrects gram
 
 ```
 /plugin install english-coach@yuchida-agent-skills
+```
+
+### [cross-repo](./cross-repo/)
+
+Work on sibling repositories while staying in your home repo. Compounds your accumulated context (CLAUDE.md, memory files, conventions) into work performed on other repositories by spawning an agent with all that knowledge injected.
+
+```
+/plugin install cross-repo@yuchida-agent-skills
 ```
 
 ### [claude-office-visualizer](https://github.com/yuchida-tamu/claude-office-visualizer)
@@ -80,6 +89,7 @@ Claude Codeにマーケットプレイスを追加：
 ```
 /plugin install tech-trend-digest@yuchida-agent-skills
 /plugin install english-coach@yuchida-agent-skills
+/plugin install cross-repo@yuchida-agent-skills
 /plugin install claude-office-visualizer@yuchida-agent-skills
 ```
 
@@ -105,6 +115,14 @@ Claude Codeにマーケットプレイスを追加：
 
 ```
 /plugin install english-coach@yuchida-agent-skills
+```
+
+### [cross-repo](./cross-repo/)
+
+ホームリポジトリに留まりながら兄弟リポジトリで作業。蓄積されたコンテキスト（CLAUDE.md、メモリファイル、規約）をエージェントに注入し、他のリポジトリでの作業に活用します。
+
+```
+/plugin install cross-repo@yuchida-agent-skills
 ```
 
 ### [claude-office-visualizer](https://github.com/yuchida-tamu/claude-office-visualizer)
