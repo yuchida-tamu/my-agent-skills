@@ -62,6 +62,19 @@
       "license": "MIT",
       "keywords": ["cross-repo", "sibling", "context", "agent", "multi-repo"],
       "strict": true
+    },
+    {
+      "name": "work-on-tasks",
+      "source": "./work-on-tasks",
+      "version": "0.1.0",
+      "description": "Review GitHub project issues, select the next tasks based on priority and dependencies, spawn coding agents to execute them in parallel where possible, and create PRs that trigger automated code review.",
+      "author": {
+        "name": "Yuta Uchida"
+      },
+      "repository": "https://github.com/yuchida-tamu/my-agent-skills",
+      "license": "MIT",
+      "keywords": ["github", "tasks", "orchestration", "agents", "pull-requests"],
+      "strict": true
     }
   ]
 }
