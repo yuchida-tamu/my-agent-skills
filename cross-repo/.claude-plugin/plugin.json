@@ -1,0 +1,9 @@
+{
+  "name": "cross-repo",
+  "version": "0.1.0",
+  "description": "Work on sibling repos while compounding context from your home repo. Spawns an agent with your accumulated knowledge to read/write files in other repositories.",
+  "author": {
+    "name": "Yuta Uchida"
+  },
+  "keywords": ["cross-repo", "sibling", "context", "agent", "multi-repo"]
+}
