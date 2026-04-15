@@ -15,6 +15,7 @@ Then install any plugin:
 ```
 /plugin install tech-trend-digest@yuchida-agent-skills
 /plugin install english-coach@yuchida-agent-skills
+/plugin install work-on-tasks@yuchida-agent-skills
 /plugin install claude-office-visualizer@yuchida-agent-skills
 ```
 
@@ -34,6 +35,14 @@ Passive English language coaching that runs in every conversation. Corrects gram
 
 ```
 /plugin install english-coach@yuchida-agent-skills
+```
+
+### [work-on-tasks](./work-on-tasks/)
+
+Task orchestrator that reviews a GitHub project board, selects unblocked high-priority issues, spawns coding agents in isolated worktrees (parallel when safe), and opens PRs that trigger automated `@claude` code review. Currently hard-coded to `yuchida-tamu/basketball-sim-game` — edit `skills/work-on-tasks/SKILL.md` to target a different repo.
+
+```
+/plugin install work-on-tasks@yuchida-agent-skills
 ```
 
 ### [claude-office-visualizer](https://github.com/yuchida-tamu/claude-office-visualizer)
@@ -74,6 +83,7 @@ Claude Codeにマーケットプレイスを追加：
 ```
 /plugin install tech-trend-digest@yuchida-agent-skills
 /plugin install english-coach@yuchida-agent-skills
+/plugin install work-on-tasks@yuchida-agent-skills
 /plugin install claude-office-visualizer@yuchida-agent-skills
 ```
 
@@ -93,6 +103,14 @@ Claude Codeにマーケットプレイスを追加：
 
 ```
 /plugin install english-coach@yuchida-agent-skills
+```
+
+### [work-on-tasks](./work-on-tasks/)
+
+GitHub プロジェクトボードをレビューし、ブロックされていない優先タスクを選択し、分離ワークツリーでコーディングエージェントを（安全な場合は並列で）起動し、`@claude` 自動コードレビューをトリガーする PR を作成するタスクオーケストレーター。現状 `yuchida-tamu/basketball-sim-game` にハードコードされています。別リポジトリで使う場合は `skills/work-on-tasks/SKILL.md` を編集してください。
+
+```
+/plugin install work-on-tasks@yuchida-agent-skills
 ```
 
 ### [claude-office-visualizer](https://github.com/yuchida-tamu/claude-office-visualizer)
