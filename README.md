@@ -16,9 +16,10 @@ Then install any plugin:
 /plugin install tech-trend-digest@yuchida-agent-skills
 /plugin install english-coach@yuchida-agent-skills
 /plugin install cross-repo@yuchida-agent-skills
-/plugin install work-on-tasks@yuchida-agent-skills
 /plugin install claude-office-visualizer@yuchida-agent-skills
 ```
+
+> **Looking for `work-on-tasks`?** It has moved to a new marketplace and been renamed to `exec-tasks` as part of the [`claude-project-workflow`](https://github.com/yuchida-tamu/claude-project-workflow) suite (`/init-project` → `/exec-tasks` → `/plan-feature` → `/review-impl`). Install with `/plugin marketplace add yuchida-tamu/claude-project-workflow` then `/plugin install exec-tasks@claude-project-workflow`.
 
 If a newly added plugin isn't found, update the marketplace cache first:
 
@@ -50,14 +51,6 @@ Work on sibling repositories while staying in your home repo. Compounds your acc
 
 ```
 /plugin install cross-repo@yuchida-agent-skills
-```
-
-### [work-on-tasks](./work-on-tasks/)
-
-Task orchestrator that reviews a GitHub project board, selects unblocked high-priority issues, spawns coding agents in isolated worktrees (parallel when safe), and opens PRs that trigger automated `@claude` code review. Currently hard-coded to `yuchida-tamu/basketball-sim-game` — edit `skills/work-on-tasks/SKILL.md` to target a different repo.
-
-```
-/plugin install work-on-tasks@yuchida-agent-skills
 ```
 
 ### [claude-office-visualizer](https://github.com/yuchida-tamu/claude-office-visualizer)
@@ -99,9 +92,10 @@ Claude Codeにマーケットプレイスを追加：
 /plugin install tech-trend-digest@yuchida-agent-skills
 /plugin install english-coach@yuchida-agent-skills
 /plugin install cross-repo@yuchida-agent-skills
-/plugin install work-on-tasks@yuchida-agent-skills
 /plugin install claude-office-visualizer@yuchida-agent-skills
 ```
+
+> **`work-on-tasks` をお探しですか？** このプラグインは新しいマーケットプレイス [`claude-project-workflow`](https://github.com/yuchida-tamu/claude-project-workflow) に移動し、`exec-tasks` に改名されました（`/init-project` → `/exec-tasks` → `/plan-feature` → `/review-impl` のワークフロースイートの一部）。`/plugin marketplace add yuchida-tamu/claude-project-workflow` のあと `/plugin install exec-tasks@claude-project-workflow` でインストールできます。
 
 新しく追加されたプラグインが見つからない場合、マーケットプレイスのキャッシュを更新してください：
 
@@ -133,14 +127,6 @@ Claude Codeにマーケットプレイスを追加：
 
 ```
 /plugin install cross-repo@yuchida-agent-skills
-```
-
-### [work-on-tasks](./work-on-tasks/)
-
-GitHub プロジェクトボードをレビューし、ブロックされていない優先タスクを選択し、分離ワークツリーでコーディングエージェントを（安全な場合は並列で）起動し、`@claude` 自動コードレビューをトリガーする PR を作成するタスクオーケストレーター。現状 `yuchida-tamu/basketball-sim-game` にハードコードされています。別リポジトリで使う場合は `skills/work-on-tasks/SKILL.md` を編集してください。
-
-```
-/plugin install work-on-tasks@yuchida-agent-skills
 ```
 
 ### [claude-office-visualizer](https://github.com/yuchida-tamu/claude-office-visualizer)
